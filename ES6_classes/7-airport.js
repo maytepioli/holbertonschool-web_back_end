@@ -4,7 +4,7 @@ export default class Airport {
     this._code = code;
   }
 
-  String() {
-    return `Airport _name: ${this._name}, _code: ${this._code}`;
+  toString() {
+    return `[objet ${this._code}]`;
   }
 }
