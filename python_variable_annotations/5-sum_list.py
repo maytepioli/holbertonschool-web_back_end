@@ -6,7 +6,7 @@ todos los elementos
 """
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
     Esta función recibe una lista de números y devuelve la suma de
     todos los elementos
