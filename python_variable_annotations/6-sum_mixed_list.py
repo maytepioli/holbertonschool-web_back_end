@@ -6,7 +6,7 @@
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
     Esta función recibe una lista de números enteros o flotantes, y devuelve
     la suma de esos números como un número flotante.
