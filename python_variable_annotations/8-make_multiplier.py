@@ -13,6 +13,6 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     Devuelve una función que multiplica un número
     flotante por el valor de 'multiplier'
     """
-    def multiplier(x: float):
+    def multiplier_fuction(x: float):
         return x * multiplier
-    return make_multiplier
+    return multiplier_fuction
