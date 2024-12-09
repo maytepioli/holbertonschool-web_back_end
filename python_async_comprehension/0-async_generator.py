@@ -20,7 +20,7 @@ async def async_generator():
     asíncrona, lo que permite que otros procesos
     continúen ejecutándose mientras se espera.
     """
-    for i in range(11):
+    for i in range(10):
         await asyncio.sleep(1)
         num: float = random.uniform(0, 10)
         yield num
