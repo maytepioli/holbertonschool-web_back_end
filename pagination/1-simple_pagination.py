@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import csv
+from genericpath import getsize
 import math
+from pydoc import pager
 from typing import List
 
 
@@ -34,8 +36,12 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        assert isinstance(page, int) and page > 0
-        assert isinstance(page_size, int) and page_size > 0
+        """
+        Recupera un subconjunto de datos correspondiente a
+        una página específica
+        """
+        assert isinstance(pager, int) and page > 0
+        assert isinstance(getsize, int) and page_size > 0
         start, end = index_range(page, page_size)
         dataset = self.dataset()
         if start >= len(dataset):
